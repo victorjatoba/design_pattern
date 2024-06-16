@@ -1,14 +1,11 @@
-export class VisualComponents {
-    label: String;
-    button: String;
+import { ComponentFactory } from "./ComponentFactory";
 
-    constructor(theme: String) {
-        if (theme == "dark") {
-            this.label = "dark";
-            this.button = "dark";
-        } else if (theme == "light") {
-            this.label = "light";
-            this.button = "light";
-        }
+export class VisualComponents {
+    label: string;
+    button: string;
+
+    constructor(factory: ComponentFactory) {
+        this.label = factory.createLabel();
+        this.button = factory.createButton();
     }
 }
