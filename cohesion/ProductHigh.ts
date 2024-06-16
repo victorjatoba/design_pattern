@@ -1,5 +1,7 @@
 /**
  * High cohesion
+ * - Strongly focused on functionallity
+ * - Enhance reusability, maintainability and readability
  */
 interface ProductCatalog {
     getName(): string;
