@@ -53,4 +53,24 @@ public class NutritionFacts {
                 ", protein=" + protein +
                 '}';
     }
+
+    public void setServings(int servings) {
+        this.servings = servings;
+    }
+
+    public void setServingSize(int servingSize) {
+        this.servingSize = servingSize;
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
+    }
+
+    public void setSugar(int sugar) {
+        this.sugar = sugar;
+    }
+
+    public void setProtein(int protein) {
+        this.protein = protein;
+    }
 }
